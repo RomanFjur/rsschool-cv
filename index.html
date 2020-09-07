@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV of Raman Zhminko</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__image-box">
+        <img src="https://i.ibb.co/GPj8jbF/IMG-4855.jpg" alt="My portrait" class="page-header__image">
+      </div>
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Raman Zhminko</h1>
+        <p class="page-header__paragraph">Junior Frontend Developer</p>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="contacts">
+        <h2 class="title">Contacts:</h2>
+        <p><b>Phone number:</b> +375-(29)-206-82-86;</p>
+        <p><b>Email:</b> ramanzhminko@gmail.com;</p>
+      </section>
+      <section class="about">
+        <h2 class="title">About me:</h2>
+        <p>
+          My name is Raman (shortly Roma) and I'm 28 years old. <em>I want to create awesome websites and SPA's with totally complicated animations, great and clear functional, interesting and unique web-applications.</em> I now that it's hard, but it's very interesting and epic process for me. When you writing code that after all hours and days start working correctly and as you wanted - it's cool and awesome! I want to learn and create more!
+        </p>
+      </section>
+      <section class="skills">
+        <h2 class="title">Skills:</h2>
+        <ul><b>Skills:</b>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Less/Sass</li>
+          <li>Gulp</li>
+          <li>Git</li>
+          <li>JSON</li>
+          <li>BEM</li>
+        </ul>
+        <ul><b>Tools:</b>
+          <li>Atom</li>
+          <li>Adobe Photoshop CS6</li>
+          <li>Figma</li>
+          <li>GitKraken</li>
+          <li>iTerm</li>
+          <li>Android Studio</li>
+          <li>Xcode</li>
+          <li>MAMP</li>
+        </ul>
+      </section>
+      <section class="experience">
+        <h2 class="title">Experience:</h2>
+        <a href="https://github.com/RomanFjur">GitHub @RomanFjur</a>
+      </section>
+      <section class="education">
+        <h2 class="title">Education:</h2>
+        <p>HTMLAcademy courses, Udemy courses, self education;</p>
+      </section>
+      <section class="english">
+        <h2 class="title">English:</h2>
+        <p>Level A2</p>
+      </section>
+      <section class="code-example">
+        <h2 class="title">Code example:</h2>
+        <pre>
+  <i>Timer</i>
+  <code>
+    const deadline = '2020-05-11';
+
+    function getTimeRemaining(endtime) {
+      const t = Date.parse(endtime) - Date.parse(new Date()),
+            days = Math.floor( (t/(1000*60*60*24)) ),
+            seconds = Math.floor( (t/1000) % 60 ),
+            minutes = Math.floor( (t/1000/60) % 60 ),
+            hours = Math.floor( (t/(1000*60*60) % 24) );
+
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+
+    function getZero(num){
+      if (num >= 0 && num < 10) {
+        return '0' + num;
+      } else {
+        return num;
+      }
+    }
+
+    function setClock(selector, endtime) {
+
+      const timer = document.querySelector(selector),
+            days = timer.querySelector("#days"),
+            hours = timer.querySelector('#hours'),
+            minutes = timer.querySelector('#minutes'),
+            seconds = timer.querySelector('#seconds'),
+            timeInterval = setInterval(updateClock, 1000);
+
+      updateClock();
+
+      function updateClock() {
+        const t = getTimeRemaining(endtime);
+
+        days.innerHTML = getZero(t.days);
+        hours.innerHTML = getZero(t.hours);
+        minutes.innerHTML = getZero(t.minutes);
+        seconds.innerHTML = getZero(t.seconds);
+
+        if (t.total <= 0) {
+          clearInterval(timeInterval);
+        }
+      }
+    }
+
+    setClock('.timer', deadline);
+  </code>
+        </pre>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="copyright">© Copyright 2020 by Raman Zhminko</p>
+    </footer>
+  </body>
+</html>
