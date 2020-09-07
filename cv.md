@@ -1,6 +1,6 @@
 1. **Name and Surname:**Raman Zhminko;
 2. **Phone number:** +375-(29)-206-82-86; **Email:** www.ramanzhminko@gmail.com;
-3. **About me:** My name is Raman (shortly Roma) and I'm 28 years old. I want to create awesome websites and SPA's with totally complicated animations, great and clear functional, interesting and unique web-applications. I now that it's hard, but it's very interesting and epic process for me. When you writing code that after all hours and days start working correctly and as you wanted - it's cool and awesome! I want to learn and create more!
+3. **About me:** My name is Raman (shortly Roma) and I'm 28 years old. *I want to create awesome websites and SPA's with totally complicated animations, great and clear functional, interesting and unique web-applications.* I now that it's hard, but it's very interesting and epic process for me. When you writing code that after all hours and days start working correctly and as you wanted - it's cool and awesome! I want to learn and create more!
 4. **Skills:**
    * JavaScript;
    * HTML;
